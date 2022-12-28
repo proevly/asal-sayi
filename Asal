@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main {
+   public static void AsalMı(){
+       int number;
+       Scanner inPut = new Scanner(System.in);
+       System.out.println("Asal olup olmadigini kontrol etmek istediginiz sayiyi giriniz");
+       number = inPut.nextInt();
+       for(int i =2;i<number/2;i++){
+       if((number)%i!=0){
+           System.out.println(number+" Sayisi Asaldir");
+       }
+       else if((number)%i==0){
+           System.out.println(number+" sayisi Asal Degildir");
+       }
+
+       }
+       AsalMı();
+   }
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    AsalMı();
+    }
+}
